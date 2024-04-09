@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>영화 블로그3 프로젝트 메인 페이지</h1>
+    <p>영화 블로그 내용을 관리합니다.</p>
+    {% if movie %}
+        <li><a href="{% url "movies:movie_detail" movie %}">{{ movie }}</a></li>
+    {% endif %}
+    <a href="/create_movie/">영화 추가</a>
+{% endblock content %}

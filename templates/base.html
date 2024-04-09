@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영화 블로그 프로젝트</title>
+</head>
+<body>
+  <a href="{% url "movies:index" %}">[MAIN]</a> | 
+  <a href="{% url "movies:create_movie" %}">[CRAETE]</a>
+  <a href="{% url "accounts:login" %}">[LOGIN]</a>
+  {% block content %}
+  {% endblock content %}
+</body>
+</html>

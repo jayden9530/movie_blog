@@ -6,5 +6,5 @@
     {% if movie %}
         <li><a href="{% url "movies:movie_detail" movie %}">{{ movie }}</a></li>
     {% endif %}
-    <a href="/create_movie/">영화 추가</a>
+    <a href="{% url "movies:create_movie" %}">영화 추가</a>
 {% endblock content %}
